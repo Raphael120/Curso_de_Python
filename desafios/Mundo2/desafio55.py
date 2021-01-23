@@ -1,19 +1,21 @@
 # Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos.
 
 
-nums = 0
+nums = []
 for i in range(1, 6):
     peso = (input(f'Digite o peso da {i}ª pessoa:'))
+    pesos = [peso]
+    nums = nums + pesos
     # pass
     # peso = [input(f'Insira o peso da {i+1}ª pessoa: Kg '),
     #         input(f'Insira o peso da {i+2}ª pessoa: Kg '),
     #         input(f'Insira o peso da {i+3}ª pessoa: Kg '),
     #         input(f'Insira o peso da {i+4}ª pessoa: Kg '),
     #         input(f'Insira o peso da {i+5}ª pessoa: Kg ')]
-    for p in peso:
-        num = float(peso)
-        nums = peso + peso
-        print(peso)
+    # for p in peso:
+    #     num = float(peso)
+    #     # nums
+    #     print(peso)
     # pesos = [peso]
     # for p in range(1, peso):
     #     print(peso)
@@ -23,7 +25,9 @@ for i in range(1, 6):
     #       f'- O maior peso lido foi: \033[1m{max(peso)}Kg\033[m.')
     # print(f'\n- O menor peso lido foi: {min(peso)}Kg.\n'
     #       f'- O maior peso lido foi: {max(peso)}Kg.')
-    print(nums)
+else:
+    print(f'O menor peso lido foi: {min(nums)}Kg\n'
+          f'O maior peso lido foi: {max(nums)}Kg')
 
 
 # RASCUNHO:
