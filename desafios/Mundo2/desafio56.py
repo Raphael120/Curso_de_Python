@@ -7,7 +7,7 @@ media = 0
 idvelho = []
 idnome = []
 maisvelho = []
-nomeidade = []
+nomeidade = ()
 idmulher = 0
 # nomes = []
 # idades = 0
@@ -57,18 +57,25 @@ for n in range(1, 5):
     # pessoa = nome, idade, sexo
     if sexo == 1:  # in pessoa == '1':
         print(f'- {nome} é do sexo MASCULINO e tem {idade} ANOS.')
+        # idades = [max(idade)]
+        nomes = [nome]  # < ---------
         idades = [max(idade)]
-        nomes = [nome]
+        # for no, idd in zip(nomes, idades):
+        # print(f'- {no}, {idd} anos.')
+        
+        # nomesidades = nome < idade
+        # nomeidade.append(nomesidades)
         # idvelho = int(max(list(nomeidade[1])))
         # print('nomeidade[1]:', max([nomeidade[1]]))
         # idade = max(idade)
         # nomes = [nome]
         # idades = max(idade)
-        # idvelho += list((idades + nomes))  # "funcional"
-        idvelho += list((idades + nomes))
+        idvelho += list((idades + nomes))  # "funcional"
+        # idvelho += list((idades + nomes))
+        
         # print(max(idvelho))
         # idnome = idnome + nomes
-        # nomeidade += nomes
+        #     nomeidade += no, idd
         # maisvelho = idvelho + idnome
         # if nomes
         # idnome += nome  # , idvelho  # + max(idades)
@@ -83,7 +90,8 @@ for n in range(1, 5):
 else:
     # A MÉDIA DE IDADE VAI AQUI!!!
     print('::::' * 20)
+    # print(max(nomeidade[1]))
     print(f"- Média de idade do grupo: '{media:.0f} anos'\n"
           f"- Nome do homem mais velho do grupo: '{max(idvelho)}'\n"
-          f"- Quantidade de mulheres que tem menos de 20 anos: '{idmulher}'")  # , nomeidade
+          f"- Quantidade de mulheres que tem menos de 20 anos: '{idmulher}' mulher(es)")  # , nomeidade
     # f'- O homem mais velho do grupo tem {idvelho} anos e se chama {idnome}')
