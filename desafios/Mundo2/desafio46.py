@@ -5,11 +5,11 @@ from emoji import emojize
 from time import sleep
 
 
-print('Contagem regressiva para o Ano-Novo!!!')
+print('\033[1mContagem regressiva para o Ano-Novo!!!\033[m')
 sleep(1)
 for c in range(10, -1, -1):
     print(c)
     sleep(1)
 sleep(1)
 print('\033[1;34mFeliz 2021!!!!!!\033[m ')
-print(emojize(':fireworks:' * 40, use_aliases=True))
+print(emojize(':fireworks: ' * 40, use_aliases=True))

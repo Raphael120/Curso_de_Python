@@ -72,7 +72,7 @@ for n in range(1, 5):
         # idades = max(idade)
         idvelho += list((idades + nomes))  # "funcional"
         # idvelho += list((idades + nomes))
-        
+
         # print(max(idvelho))
         # idnome = idnome + nomes
         #     nomeidade += no, idd
@@ -93,5 +93,5 @@ else:
     # print(max(nomeidade[1]))
     print(f"- Média de idade do grupo: '{media:.0f} anos'\n"
           f"- Nome do homem mais velho do grupo: '{max(idvelho)}'\n"
-          f"- Quantidade de mulheres que tem menos de 20 anos: '{idmulher}' mulher(es)")  # , nomeidade
+          f"- Quantidade de mulheres que tem menos de 20 anos: '{idmulher}'")  # , nomeidade
     # f'- O homem mais velho do grupo tem {idvelho} anos e se chama {idnome}')
