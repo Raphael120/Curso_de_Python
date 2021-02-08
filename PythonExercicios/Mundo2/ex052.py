@@ -16,21 +16,13 @@
 # por 11:  113 / 11 = 10, com resto 3. O quociente (10) é menor que o divisor (11), e além disso o resto é diferente de
 # zero (o resto vale 3), portanto 113 é um número primo.
 
-# num = int(input('Digite um número inteiro para saber se ele é primo: '))
-
-# from math import prod
-# print(prod(num, ))
-
-# num = int(input('Digite um número inteiro para saber se ele é primo: '))
-
-for i in range(2, 101):
-    for x in range(2, i):
-        if i % x == 0:
-            print(f'\033[1;31m{i} NÃO é primo.\033[m')
-            break
-    else:
-        print(f'\033[1;32m{i} é PRIMO.\033[m')
-
+# for i in range(2, 101):
+#     for x in range(2, i):
+#         if i % x == 0:
+#             print(f'\033[1;31m{i} NÃO é primo.\033[m')
+#             break
+#     else:
+#         print(f'\033[1;32m{i} é PRIMO.\033[m')
 
 # for i in range(2, 101):
 #     for x in range(2, i):
@@ -40,3 +32,18 @@ for i in range(2, 101):
 #     else:
 #         print(f'{i} é PRIMO.')
 
+# RESOLUÇÃO:
+
+num = int(input('Insira um número inteiro: '))
+n = 0
+for i in range(1, num + 1):
+    # print(i, end=' ')
+    if num % i == 0:
+        print(f'\033[32m{i}\033[m', end=' ')
+        n += 1
+    else:
+        print(f'\033[31m{i}\033[m', end=' ')
+if n == 2:
+    print(f'\n- O número {num} foi divisível {n} vezes, portanto ele \033[;32mÉ PRIMO.\033[m')
+else:
+    print(f'\n- O número {num} foi divisível {n} vezes, portanto ele \033[;31mNÃO É PRIMO.\033[m')

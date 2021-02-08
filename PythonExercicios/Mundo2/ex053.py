@@ -2,10 +2,6 @@
 # Ex: 'APOS A SOPA', 'A SACADA DA CASA', 'A TORRE DA DERROTA', 'O LOBO AMA O BOLO', 'ANOTARAM A DATA DA MARATONA'.
 
 frase = str(input('Insira uma frase:')).upper().strip().replace(' ', '')
-# frase2 = frase[::-1]
-# # print(len(frase), frase)
-# # print(frase[::-1])
-# print(frase == frase2)
 
 for i in frase:
     if frase == frase[::-1]:
