@@ -4,7 +4,7 @@
 # - Se já passou do tempo do alistamento.
 # Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
 
-from time import sleep
+# from time import sleep
 # USANDO A BIBLIOTECA DATETIME:
 from datetime import date
 
