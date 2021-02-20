@@ -13,7 +13,6 @@ for i in range(num, 0, -1):
 print(f'{num}! = {fatfor}')
 print(':::' * 20)
 
-
 # LAÇO WHILE:
 fatwhile = 1
 # print(':::' * 20)
