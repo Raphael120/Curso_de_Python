@@ -3,11 +3,25 @@ EX: 5! = 5x4x3x2x1 = 120   (FAZER O EXERCÍCIO USANDO O LAÇO FOR E O WHILE)"""
 
 # LAÇO FOR:
 
-fatorial = 1
+fatfor = 1
 f = 0
-num = int(input('Insira um número para mostrar o seu fatorial: '))
+print(':::' * 20)
+num = int(input('- Insira um número para mostrar o seu fatorial: '))
 for i in range(num, 0, -1):
-    fatorial *= i
+    fatfor *= i
     f = i
-    print(i, end=' x ')
-print(f'\n{num}! = {fatorial}')
+print(f'{num}! = {fatfor}')
+print(':::' * 20)
+
+
+# LAÇO WHILE:
+fatwhile = 1
+# print(':::' * 20)
+num = int(input('- Insira um número para mostrar o seu fatorial: '))
+fatnum = num
+num = num + 1
+while num != 1:
+    num -= 1
+    fatwhile *= num
+print(f'{fatnum}! = {fatwhile}')
+print(':::' * 20)
