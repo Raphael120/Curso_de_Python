@@ -12,12 +12,12 @@
 #     print('FIM')
 
 'LAÇO WHILE:'
-# c = 1
-# while c < 10:
-#     print(c)
-#     c += 1
-# else:
-#     print('FIM')
+c = 1
+while c < 11:
+    print(c)
+    c += 1
+else:
+    print('FIM')
 
 # n = 1
 # r = 'S'
@@ -27,15 +27,15 @@
 # else:
 #     print('FIM')
 
-n = 1
-par = impar = 0
-while n != 0:
-    n = int(input('Digite um número (Digite 0 para parar a contagem): '))
-    if n != 0:
-        if n % 2 == 0:
-            par += 1
-        else:
-            impar += 1
-else:
-    print(f'Dentre os números digitados, {par} são pares e {impar} são impares.')
+# n = 1
+# par = impar = 0
+# while n != 0:
+#     n = int(input('Digite um número (Digite 0 para parar a contagem): '))
+#     if n != 0:
+#         if n % 2 == 0:
+#             par += 1
+#         else:
+#             impar += 1
+# else:
+#     print(f'Dentre os números digitados, {par} são pares e {impar} são impares.')
 
