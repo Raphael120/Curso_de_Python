@@ -38,7 +38,7 @@ ele disser que quer mostrar 0 TERMOS"""
 #     print('- Você escolheu uma opção inválida.')
 
 PA = 1
-PAA = 1
+# PAA = 1
 # termoo = 0
 # razaoo = 0
 # resultado = 0
@@ -52,19 +52,27 @@ while progressao < 9:
         # termoo = termo
         # razaoo = razao
         PA = termo + razao * progressao
-        PAA += PA
+        # PAA += PA
         print(PA, end=' ')
-    else:
+    while progressao < 10:
         opcao = int(input(f'\n- A Progressão Aritmética do número {termo} está acima.\n'
                           f'Escolha o que deseja fazer agora:\n'
                           f'[ 0 ] PARA PARAR O PROGRAMA\n'
                           f'[ 1 ] PARA MOSTRAR OUTROS TERMOS\n'
                           f'- Digite a opção desejada: '))
-        if opcao == 1:
+        progressao = 0
+        while opcao == 1:
             print('Você optou por mostrar outros termos.')
+            termo = int(input('- Insira o primeiro termo da Progressão Aritmética: '))
+            razao = int(input('- Insira a razão da Progressão Aritmética: '))
+            progressao *= 1
+            # while progressao < 9:
+            # progressao += 1
+            PA = termo + razao * progressao
+            print(PA)
         else:
             print('Você optou por parar o programa.')
-    #     break
+        break
     # print(progressao, end=' ')
 #     # break
 # print(PAA)
