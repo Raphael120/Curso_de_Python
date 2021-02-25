@@ -55,24 +55,28 @@ while progressao < 9:
         # PAA += PA
         print(PA, end=' ')
     while progressao < 10:
-        opcao = int(input(f'\n- A Progressão Aritmética do número {termo} está acima.\n'
+        opcao = int(input(f'\n- Os 10 primeiros termos da Progressão Aritmética estão acima.\n'
                           f'Escolha o que deseja fazer agora:\n'
                           f'[ 0 ] PARA PARAR O PROGRAMA\n'
                           f'[ 1 ] PARA MOSTRAR OUTROS TERMOS\n'
                           f'- Digite a opção desejada: '))
-        progressao = 0
-        while opcao == 1:
-            print('Você optou por mostrar outros termos.')
-            termo = int(input('- Insira o primeiro termo da Progressão Aritmética: '))
-            razao = int(input('- Insira a razão da Progressão Aritmética: '))
-            progressao *= 1
+        progressao = -1
+        while opcao == 0:
+            print('Você optou por parar o programa.')
+            break
+            # termo = int(input('- Insira o primeiro termo da Progressão Aritmética: '))
+            # razao = int(input('- Insira a razão da Progressão Aritmética: '))
+            # progressao *= 1
             # while progressao < 9:
             # progressao += 1
-            PA = termo + razao * progressao
-            print(PA)
+            # PA = termo + razao * progressao
+            # print(PA)
         else:
-            print('Você optou por parar o programa.')
-        break
+            print('Você optou por mostrar outros termos.')
+            break
+    # else:
+    #     print('PROGRAMA FINALIZADO')
+    #     break
     # print(progressao, end=' ')
 #     # break
 # print(PAA)
