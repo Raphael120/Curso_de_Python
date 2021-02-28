@@ -1,7 +1,6 @@
 """Melhore o DESAFIO 061, perguntando para o usuário se ele quer mostrar mais alguns termos. O programa encerra quando
 ele disser que quer mostrar 0 TERMOS"""
 
-PA = 1
 progressao = -1
 while progressao < 9:
     print(':::' * 35)
@@ -27,8 +26,7 @@ while progressao < 9:
         else:
             print('\033[1;31mVOCÊ OPTOU POR PARAR O PROGRAMA.\033[m')
             break
-
-# PA = 1
+ 
 # progressao = -1
 # while progressao < 9:
 #     print(':::' * 35)
