@@ -12,14 +12,16 @@ f = 0
 # f2 = 1
 while f < 9:
     fn = int(input('Insira um número inteiro para mostrar a sua sequência de Fibonacci: '))
-    # fn = (fn - 1) + (fn - 2)
-    # n1 = n0 + 1
-    # n2 = n0 + n1
-    # n3 = n2 + n1
-    while f < 100:
-        f += 1
+    fibo = (fn - 1) + (fn - 2)
+    # fibo2 = fn * (fn + 1) + fn * fn
+    # fn1 = fn + 1
+    # fn2 = fn + fn1
+    # fn3 = fn2 + fn1
+    while f < 50:
+        # f += 1
+        f += fibo
+        print(f, end=' ')
         # fib = f / fn
-        print((f - 1) + (f - 2), end=' ')
         # if fib == 0.61:
             # print(f, end=' ')
             # print(fn, end=' ')
