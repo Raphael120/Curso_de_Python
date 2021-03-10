@@ -5,20 +5,20 @@ Fórmula: (Fn = Fn - 1 + Fn - 2), (F(n + 2) = F(n + 1) + F(n))"""
 
 
 # FIBONACCI 01:
-# f, i = 0, 1
-# fibo = int(input('Digite um número para mostrar o seu intervalo da sequência de Fibonacci: '))
-# while f < fibo:
-#     print(f, end=' ')
-#     f, i = i, f + i
-#     # print(fibo)
+f, i = 0, 1
+fibo = int(input('Digite um número para mostrar o seu intervalo da sequência de Fibonacci: '))
+while f < fibo:
+    print(f, end=' ')
+    f, i = i, f + i
+    # print(fibo)
 
 # # FIBONACCI DO DESAFIO:
-fibo = int(input('Digite um número para mostrar a sua sequência de Fibonacci: '))
-f, i = fibo, fibo + 1
-while f == fibo:
-    print(f, end=' ')
-    f, i = f, f + i
-    # print(fibo)
+# fibo = int(input('Digite um número para mostrar a sua sequência de Fibonacci: '))
+# f, i = fibo, fibo + 1
+# while f < fibo:
+#     f, i = f + i, i
+#     print(f, end=' ')
+#     # print(fibo)
 
 """while True:
     # while f < 2:
