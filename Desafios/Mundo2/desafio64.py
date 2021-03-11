@@ -2,32 +2,32 @@
 o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma entre eles
 (desconsiderando o flag)"""
 
-# COM FLAG (PONTO DE PARADA):
-'''f = 999
-num = int(input('Insira um número inteiro (Digite "999" para parar a sequência): '))
-while f != num:
-    num += 1
-    print(num)'''
-
 num = 0
 soma = 0
 contagem = 0
 
-# while True:
-while num >= 0:
-    num = int(input("Digite um número inteiro (Digite '999' para parar o programa): "))
-    # while num != 999:
-    #     num += 1
-    #     print(num)
-    # else:
-    #     print('VOCÊ OPTOU POR FINALIZAR O PROGRAMA.')
-    #     break
+while num != 999:
+    num = int(input("Digite um número inteiro (Digite '\033[1;31m999\033[m' para parar o programa): "))
     if num != 999:
         soma += num
         contagem += 1
-        # print(soma, contagem)
-    else:
-        print('VOCÊ OPTOU POR PARAR O PROGRAMA.')
-        break
 else:
-    print(f'Foram digitados {contagem} números. A soma entre eles é: {soma}.')
+    print(':::' * 30)
+    print(f'\033[1;33mVOCÊ OPTOU POR PARAR O PROGRAMA\033[m.\n'
+          f'- Foram digitados \033[1;32m{contagem}\033[m números.\n'
+          f'- A soma entre os números digitados é: \033[1;32m{soma}\033[m.')
+
+
+# num = 0
+# soma = 0
+# contagem = 0
+# while num != 999:
+#     num = int(input("Digite um número inteiro (Digite '999' para parar o programa): "))
+#     if num != 999:
+#         soma += num
+#         contagem += 1
+# else:
+#     print(':::' * 30)
+#     print(f'VOCÊ OPTOU POR PARAR O PROGRAMA.\n'
+#           f'- Foram digitados {contagem} números.\n'
+#           f'- A soma entre os números digitados é {soma}.')

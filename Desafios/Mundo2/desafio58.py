@@ -26,8 +26,6 @@ while numero <= 100:
               '- \033[1;32mVOCÊ GANHOU!\033[m\n'
               f'- \033[1mForam necessárias {numero + 1} tentativas para você acertar!\033[m')
         break
-else:
-    print('teste')
 
 # from random import randint
 # from time import sleep
