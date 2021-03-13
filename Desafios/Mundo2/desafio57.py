@@ -7,7 +7,7 @@ while s != 'M' or s != 'F':
                   '- [ M ] Para sexo MASCULINO\n'
                   '- [ F ] Para sexo FEMININO\n'
                   '- Ou aperte ENTER para parar a execução do programa.\n'
-                  'Escolha a opção desejada: ')).upper().strip()
+                  'Escolha a opção desejada: ')).strip().upper()  # '[0]' <- Pode ser usado para pegar só a 1ª letra.
     print('---' * 20)
     if s == 'M':
         print('- Você escolheu o sexo MASCULINO.')
@@ -40,3 +40,10 @@ while s != 'M' or s != 'F':
 #         break
 #     if s != 'M' or s != 'F' or s != '':
 #         print('Escolha uma opção válida!')
+
+# RESOLUÇÃO DO DESAFIO:
+
+'''sexo = str(input('- Informe seu sexo [M/F]: ')).strip().upper()[0]
+while sexo not in 'FfMm':
+    sexo = str(input('- Dados inválidos. Por favor, informe seu sexo: ')). strip().upper()[0]
+print(f'- Sexo {sexo} registrado com sucesso.')'''

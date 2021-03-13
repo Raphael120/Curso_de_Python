@@ -9,12 +9,12 @@ carteira = float(input('Digite um valor em reais: R$'))
 
 # Prática com cotação atual:
 
-dólar = carteira / 5.38
+dolar = carteira / 5.38
 euro = carteira / 6.37
 libra = carteira / 7.14
 
 print(f'Você tem R${carteira:.2f} na carteira. Levando em consideração cotação do dia 20/11/2020, você pode comprar:\n'
-      f'- Dólares: ${dólar:.2f}.\n'
+      f'- Dólares: ${dolar:.2f}.\n'
       f'- Euros: €{euro:.2f}.\n'
       f'- Libras: £{libra:.2f}.\n'
       )
