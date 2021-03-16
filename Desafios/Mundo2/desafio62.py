@@ -1,7 +1,7 @@
 """Melhore o DESAFIO 061, perguntando para o usuário se ele quer mostrar mais alguns termos. O programa encerra quando
 ele disser que quer mostrar 0 TERMOS"""
 
-progressao = -1
+'''progressao = -1
 while progressao < 9:
     print(':::' * 35)
     termo = int(input('\033[1m- Insira o primeiro termo da Progressão Aritmética: '))
@@ -25,8 +25,37 @@ while progressao < 9:
             print('\033[1;32mVOCÊ OPTOU POR MOSTRAR OUTROS TERMOS.\033[m')
         else:
             print('\033[1;31mVOCÊ OPTOU POR PARAR O PROGRAMA.\033[m')
+            break'''
+
+# COM CONTADOR = 1:
+
+progressao = 1
+while progressao <= 10:
+    print(':::' * 35)
+    termo = int(input('\033[1m- Insira o primeiro termo da Progressão Aritmética: '))
+    razao = int(input('- Insira a razão da Progressão Aritmética:\033[m'))
+    PA = termo
+    print(':::' * 35)
+    while progressao <= 10:
+        progressao += 1
+        PA += razao
+        # print(f'{PA}', end=' --> ')
+        print(f'\033[1;33m{PA}\033[m', end=' --> ')
+    if progressao < 11:
+        print('\n', '===' * 35, sep='')
+        opcao = int(input(f'\033[1m- OS 10 PRIMEIROS TERMOS DA PROGRESSÃO ARITMÉTICA ESTÃO ACIMA.'
+                          f'\nEscolha o que deseja fazer agora:\n'
+                          f'[ 0 ] PARA PARAR O PROGRAMA\n'
+                          f'[ 1 ] PARA MOSTRAR OUTROS TERMOS\n'
+                          f'- Digite a opção desejada:\033[m '))
+        print('===' * 35)
+        # progressao = -1
+        if opcao == 1:
+            print('\033[1;32mVOCÊ OPTOU POR MOSTRAR OUTROS TERMOS.\033[m')
+        else:
+            print('\033[1;31mVOCÊ OPTOU POR PARAR O PROGRAMA.\033[m')
             break
- 
+
 # progressao = -1
 # while progressao < 9:
 #     print(':::' * 35)
